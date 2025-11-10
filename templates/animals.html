@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Zoo</title>
+</head>
+<body>
+    <h2>Animals</h2>
+
+    <ul>
+    {% for animal in animals %}
+        <li>{{ animal.name|capfirst }} says "{{animal.sound}}"</li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>
